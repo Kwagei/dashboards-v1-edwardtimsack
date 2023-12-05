@@ -12,6 +12,9 @@
     padding: 10px;
     
 }
+.aside{
+    display: none;
+}
 .header{
     /* background-color: blueviolet; */
     display: flex;
@@ -187,6 +190,12 @@
     font-weight: 500;
     color: #6e6e6e;
 }
+.announce{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
 .announcement{
     display: flex;
     flex-direction: column;
@@ -278,6 +287,7 @@
     border: none;
     border: 1px solid rgb(197, 197, 197);
     padding: 0.4rem;
+    /* font-size: 20px; */
     color: red;
     background-color: #FCFAFF;
     font-weight: 600;
@@ -328,6 +338,8 @@
     padding: 20px;
     background-color: hsl(240, 63%, 12%);
     margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+
 }
 .recent-title h1{
     font-size: 20px;
@@ -381,4 +393,52 @@
     font-weight: 600;
     border-radius: 0px 0px 10px 10px;
     border-radius: none;
+}
+
+
+/* media queries */
+@media (min-width: 1024px) {
+    .header{
+        background-color: aqua;
+    }
+    .aside{
+        display: block;
+        background-color: brown;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .container{
+        display: block;
+    }
+    /* header{ 
+        /* background-color: darkorange; */
+     /* }  */
+    /* #home{
+        background-color: #FCFAFF;
+        width: 60px;
+    } */
+    /* .one{
+        display: flex;
+        flex-direction: row;
+    } */
+    /* .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        height: 100px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    } */
+}
+/* media queries extra large screen */
+@media (min-width: 1280px) {
+}
+/* media queries extra extra large screen */
+@media (min-width: 1536px) {
+    
 }
